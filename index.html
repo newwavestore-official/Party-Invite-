@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW WAVE // EXCLUSIVE ACCESS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="gate-screen" class="gate-container">
+        <div class="gate-content">
+            <p class="gate-secure-note">⚠️ SECURE SYSTEM // ENCRYPTED ACCESS</p>
+            <h2 class="gate-title">AUTHORIZE DIGITAL PASS</h2>
+            <div class="input-wrapper">
+                <input type="text" id="guest-name-input" placeholder="ENTER YOUR NAME..." autocomplete="off" maxlength="25">
+                
+                <input type="password" id="gate-password-input" placeholder="ENTER ACCESS CODE..." autocomplete="off">
+                
+                <p id="error-message" class="error-text hidden">INVALID ACCESS CODE // TRY AGAIN</p>
+
+                <button id="unlock-btn">VERIFY IDENTITY</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="invite-screen" class="invite-container hidden">
+        <header class="animate-fade-in">
+            <p class="subtitle">YOU HAVE BEEN SPECIALLY INVITED TO</p>
+            <h1 class="main-hook">THE LAUNCH OF</h1>
+        </header>
+
+        <div class="logo-wrapper animate-drop-in">
+            <img src="your-logo.svg" alt="NEW WAVE" class="brand-logo">
+        </div>
+
+        <div class="dynamic-pass-zone animate-fade-in">
+            <p class="pass-label">DIGITAL PASS STATUS: ACCESS GRANTED</p>
+            <div id="manifested-name" class="guest-name-output">GUEST PASS</div>
+        </div>
+
+        <footer class="event-details animate-slide-up">
+            <div class="time-meta">
+                <span>DATE // 30.06.26</span>
+                <span>TIME // 20:00 WAT</span>
+            </div>
+            
+            <div class="venue-block">
+                <p class="venue-title">VENUE // DEONI'S PLACE</p>
+                <p class="venue-sub">OPP STA, IKORODU, LAGOS</p>
+            </div>
+
+            <p class="restriction-note">ACCESS RESTRICTED // NON-TRANSFERABLE PASS</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
