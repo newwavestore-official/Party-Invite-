@@ -13,11 +13,10 @@
             <p class="gate-secure-note">⚠️ SECURE SYSTEM // ENCRYPTED ACCESS</p>
             <h2 class="gate-title">AUTHORIZE DIGITAL PASS</h2>
             <div class="input-wrapper">
+                <!-- Username field is kept, password input completely removed -->
                 <input type="text" id="guest-name-input" placeholder="ENTER YOUR NAME..." autocomplete="off" maxlength="25">
                 
-                <input type="password" id="gate-password-input" placeholder="ENTER ACCESS CODE..." autocomplete="off">
-                
-                <p id="error-message" class="error-text hidden">INVALID ACCESS CODE // TRY AGAIN</p>
+                <p id="error-message" class="error-text hidden">YOU ARE NOT ON THE LIST</p>
 
                 <button id="unlock-btn">VERIFY IDENTITY</button>
             </div>
@@ -35,13 +34,14 @@
         </div>
 
         <div class="dynamic-pass-zone animate-fade-in">
-            <p class="pass-label">DIGITAL PASS STATUS: ACCESS GRANTED</p>
+            <!-- This message will be updated dynamically via Javascript -->
+            <p id="dynamic-status-message" class="pass-label">DIGITAL PASS STATUS: ACCESS GRANTED</p>
             <div id="manifested-name" class="guest-name-output">GUEST PASS</div>
         </div>
 
         <footer class="event-details animate-slide-up">
             <div class="time-meta">
-                <span>DATE // 30.06.26</span>
+                <span>DATE // AUGUST 2026</span>
                 <span>TIME // 20:00 WAT</span>
             </div>
             
